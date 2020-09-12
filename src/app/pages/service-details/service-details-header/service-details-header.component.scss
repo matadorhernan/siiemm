@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap";
+section {
+  background: linear-gradient(45deg, #fffffff3, #ffffffef),
+    url(/assets/services/features.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .card .card-img-overlay {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    .card-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      app-brand {
+        height: 40px;
+        width: 100px;
+      }
+    }
+    .card-text {
+      padding: 1rem;
+      background: $dark;
+      color: $white;
+    }
+  }
+}

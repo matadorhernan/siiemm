@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+.container {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+      width: 50%;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 330px;
+
+      &:nth-of-type(1) .btn-icon {
+        border-right: 1px solid #0068d6;
+      }
+      &:nth-of-type(2) .btn-icon {
+        border-right: 1px solid #1d8d37;
+      }
+
+      .btn-icon {
+        width: 50px;
+        padding: 5px 10px;
+        margin-right: 5px;
+
+        img {
+          height: 25px;
+          width: 25px;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+.navbar {
+  padding: 0 0.5rem;
+  .navbar-brand {
+    width: 200px;
+    position: relative;
+    left: -0.5rem;
+    height: 60px;
+    background: $primary;
+  }
+}

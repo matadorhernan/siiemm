@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+.wrapper {
+  position: relative;
+  background: linear-gradient(45deg, #ffffffa9, #ffffffa1),
+    url(/assets/services/chimenies.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .customer-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+
+    grid-auto-columns: 80px;
+    grid-template-rows: 80px 80px;
+    grid-auto-flow: column;
+    gap: 20px;
+    img {
+      position: relative;
+      object-fit: contain;
+      height: 80px;
+      width: 80px;
+      opacity: 1;
+    }
+  }
+}

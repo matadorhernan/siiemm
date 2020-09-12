@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+section {
+  background: #f5f5f5;
+
+  .card .card-img-overlay {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    .card-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      app-brand {
+        height: 40px;
+        width: 100px;
+      }
+    }
+    .card-text {
+      padding: 1rem;
+      background: $dark;
+      color: $white;
+    }
+  }
+}

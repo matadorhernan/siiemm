@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+  <app-brand class="navbar-brand"></app-brand>
+  <button
+    class="navbar-toggler navbar-toggler-right"
+    type="button"
+    aria-controls="appNavigation"
+    aria-expanded="!isCollapsed"
+    aria-label="Toggle navigation"
+    (click)="toggleMenu()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    id="appNavigation"
+    [ngbCollapse]="isCollapsed"
+  >
+    <div class="navbar-nav mr-auto">
+      <a
+        (click)="toggleMenu()"
+        class="nav-item nav-link"
+        [routerLink]="''"
+        [routerLinkActive]="'active'"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Inicio</a
+      >
+      <a
+        (click)="toggleMenu()"
+        class="nav-item nav-link"
+        [routerLink]="'nosotros'"
+        [routerLinkActive]="'active'"
+        >Nosotros</a
+      >
+      <a
+        (click)="toggleMenu()"
+        class="nav-item nav-link"
+        [routerLink]="'servicios'"
+        [routerLinkActive]="'active'"
+        >Servicios</a
+      >
+      <a href="#contacto" class="nav-item nav-link">Contacto</a>
+    </div>
+  </div>
+</nav>

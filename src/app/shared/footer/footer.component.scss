@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  .footer-brand {
+    height: 30px;
+    width: 150px;
+    margin-right: 5px;
+  }
+  h6 {
+    color: $white;
+  }
+}

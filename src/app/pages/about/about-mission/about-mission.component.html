@@ -1,0 +1,41 @@
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 action-call">
+        <div class="card">
+          <img
+            class="card-img"
+            [defaultImage]="'/assets/services/morelia-low.jpg'"
+            [lazyLoad]="locale.mission.card.image"
+          />
+          <div class="card-img-overlay">
+            <div class="card-title">
+              <app-brand></app-brand>
+            </div>
+            <p class="card-text">
+              {{ locale.mission.card.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-12">
+            <app-separator></app-separator>
+            <h1>{{ locale.mission.mission.title }}</h1>
+            <p>
+              {{ locale.mission.mission.desc }}
+            </p>
+          </div>
+          <div class="col-12 pt-5">
+            <app-separator></app-separator>
+            <h1>{{ locale.mission.vision.title }}</h1>
+            <p>
+              {{ locale.mission.vision.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

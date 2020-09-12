@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-6">
+        <div class="title">
+          <app-separator></app-separator>
+          <h2>
+            {{ locale.customers.title }}
+          </h2>
+          <p>
+            {{ locale.customers.desc }}
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            [routerLink]="'nosotros'"
+          >
+            {{ locale.customers.btn.text }}
+          </button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="customer-grid">
+          <img
+            [defaultImage]="''"
+            [lazyLoad]="item"
+            *ngFor="let item of locale.customers.items"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

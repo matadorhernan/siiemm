@@ -1,0 +1,27 @@
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <h1>{{ locale.title }}</h1>
+        <p [innerHTML]="locale.desc"></p>
+      </div>
+      <div class="col-md-5 col-sm-12 action-call">
+        <div class="card">
+          <img
+            class="card-img"
+            [defaultImage]="'/assets/services/morelia-low.jpg'"
+            [lazyLoad]="locale.image"
+          />
+          <div class="card-img-overlay">
+            <div class="card-title">
+              <app-brand></app-brand>
+            </div>
+            <p class="card-text">
+              {{ locale.shortDesc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

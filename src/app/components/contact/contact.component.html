@@ -1,0 +1,27 @@
+<div class="container py-5" id="contacto">
+  <div class="title pb-5">
+    <app-separator></app-separator>
+    <h2>{{ locale.title }}</h2>
+    <p class="pb-3">
+      {{ locale.desc }}
+    </p>
+    <a
+      type="button"
+      class="btn btn-primary btn-lg my-2"
+      href="https://www.linkedin.com/in/mario-martell-28543a142/"
+      target="_blank"
+    >
+      <span class="btn-icon"><img [src]="locale.btn[0].icon" /></span
+      >{{ locale.btn[0].text }}
+    </a>
+    <a
+      type="button"
+      class="btn btn-success btn-lg my-2"
+      href="https://wa.me/524494375765/"
+      target="_blank"
+    >
+      <span class="btn-icon"><img [src]="locale.btn[1].icon" /></span
+      >{{ locale.btn[1].text }}
+    </a>
+  </div>
+</div>

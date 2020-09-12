@@ -1,0 +1,49 @@
+<div [swiper]="config" [performance] class="swiper-container">
+  <div class="swiper-wrapper">
+    <div *ngFor="let slide of locale.slider" class="swiper-slide">
+      <div class="img-wrapper">
+        <img
+          [defaultImage]="'/assets/services/morelia-low.jpg'"
+          [lazyLoad]="slide.image"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <h1 [innerHTML]="locale.header.title"></h1>
+        <p>
+          {{ locale.header.desc }}
+        </p>
+        <button
+          type="button"
+          class="btn btn-primary btn-lg"
+          [routerLink]="'servicios'"
+        >
+          {{ locale.header.btn.text }}
+        </button>
+      </div>
+      <div class="col-md-5 col-sm-12 action-call">
+        <div class="card">
+          <img
+            class="card-img"
+            [defaultImage]="'/assets/services/morelia-low.jpg'"
+            [lazyLoad]="locale.header.card.image"
+          />
+          <div class="card-img-overlay">
+            <div class="card-title">
+              <app-brand></app-brand>
+            </div>
+            <p class="card-text">
+              {{ locale.header.card.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
