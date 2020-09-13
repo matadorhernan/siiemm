@@ -47,3 +47,38 @@
     }
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+
+@media (max-width: 576px) {
+  .container .title p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container .title p {
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .container .title p {
+    width: 50%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .container .title p {
+    width: 50%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container .title p {
+    width: 50%;
+  }
+}

@@ -30,3 +30,35 @@
     </div>
   </div>
 </section>
+<section>
+  <div class="container py-5">
+    <div class="title pb-5">
+      <app-separator></app-separator>
+      <h2>Nanotecnología</h2>
+    </div>
+    <div [swiper]="config" [performance] class="swiper-container row">
+      <div class="swiper-wrapper">
+        <div
+          class="card col-md-3 col-sm-6 swiper-slide"
+          *ngFor="let item of services.Nanotecnologia"
+          [routerLink]="item.id"
+        >
+          <img
+            class="card-img"
+            [defaultImage]="'assets/services/morelia-low.jpg'"
+            [lazyLoad]="item.image"
+          />
+          <div class="card-img-overlay">
+            <div class="card-brand">
+              <app-brand></app-brand>
+            </div>
+            <div class="card-overlay-body">
+              <h4 class="card-title">{{ item.shortTitle }}</h4>
+              <span class="badge badge-secondary">24 hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

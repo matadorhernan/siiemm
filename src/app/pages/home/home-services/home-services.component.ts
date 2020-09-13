@@ -13,6 +13,7 @@ export class HomeServicesComponent implements OnInit {
     centerInsufficientSlides: true,
     spaceBetween: 20,
     autoplay: true,
+    slidesOffsetAfter: 120,
     pagination: {
       el: 'swiper-pagination-service',
       dynamicBullets: true,
