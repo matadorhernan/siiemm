@@ -9,7 +9,7 @@
   <div [swiper]="config" [performance] class="swiper-container row">
     <div class="swiper-wrapper">
       <div
-        class="card col-3 swiper-slide"
+        class="card col-lg-3 col-md-5 col-sm-6 swiper-slide"
         *ngFor="let item of locale.services.items"
         [routerLink]="'servicios/' + item.id"
       >

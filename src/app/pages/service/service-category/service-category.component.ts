@@ -12,9 +12,11 @@ export class ServiceCategoryComponent implements OnInit {
   @Input('locale') locale: any;
   public services: any;
   public config: SwiperConfigInterface = {
+    effect: 'slide',
     direction: 'horizontal',
-    spaceBetween: 20,
     centerInsufficientSlides: true,
+    spaceBetween: 20,
+    autoplay: true,
   };
 
   constructor() {}

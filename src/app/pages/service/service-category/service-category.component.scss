@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~swiper/css/swiper.min.css";
+
 section {
   background: #f5f5f5;
   .container {
@@ -11,35 +13,38 @@ section {
         width: 50%;
       }
     }
-    .card {
-      cursor: pointer;
-      padding: 0;
-      height: 350px !important;
-      box-sizing: content-box !important;
-      .card-img {
-        height: inherit;
-        width: inherit;
-        object-fit: cover;
-      }
-      .card-img-overlay {
+    .swiper-wrapper {
+      padding: 0 20px;
+      .card {
+        cursor: pointer;
         padding: 0;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        .card-brand {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          padding: 1rem;
-          app-brand {
-            height: 40px;
-            width: 100px;
-          }
+        height: 350px !important;
+        box-sizing: content-box !important;
+        .card-img {
+          height: inherit;
+          width: inherit;
+          object-fit: cover;
         }
-        .card-overlay-body {
-          padding: 1rem;
-          background: $dark;
-          color: $white;
+        .card-img-overlay {
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          .card-brand {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1rem;
+            app-brand {
+              height: 40px;
+              width: 100px;
+            }
+          }
+          .card-overlay-body {
+            padding: 1rem;
+            background: $dark;
+            color: $white;
+          }
         }
       }
     }
